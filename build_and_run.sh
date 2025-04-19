@@ -6,7 +6,7 @@ if [ -f .env ]; then
   export $(grep -v '^#' .env | xargs)
 fi
 
-IMAGE_NAME=openinterpreter-test
+IMAGE_NAME=openinterpreter-sandbox
 
 docker build -t "$IMAGE_NAME" .
 
